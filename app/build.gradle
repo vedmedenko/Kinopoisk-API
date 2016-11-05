@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "kode.kinopoisk.vedmedenko"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    final SUPPORT_LIBRARY_VERSION = '25.0.0'
+    final EXP_LAYOUT_VERSION = '1.6.0'
+    final DAGGER_VERSION = '2.4'
+    final RETROFIT_VERSION = '2.0.2'
+    final OKHTTP_VERSION = '3.2.0'
+    final STETHO_VERSION = '1.4.1'
+    final RX_ANDROID_VERSION = '1.2.1'
+    final RX_JAVA_VERSION = '1.1.6'
+    final LEAKCANARY_VERSION = '1.4'
+    final BUTTERKNIFE_VERSION = '8.0.1'
+    final GLIDE_VERSION = '3.7.0'
+    final TIMBER_VERISON = '4.3.0'
+    final PLAY_SERVICES_VERSION = '9.8.0'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:cardview-v7:$SUPPORT_LIBRARY_VERSION"
+
+    compile "com.github.aakira:expandable-layout:$EXP_LAYOUT_VERSION@aar"
+
+    compile "com.google.dagger:dagger:$DAGGER_VERSION"
+    apt "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
+
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION"
+
+    compile "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION"
+    compile "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION"
+
+    compile "com.facebook.stetho:stetho:$STETHO_VERSION"
+    compile "com.facebook.stetho:stetho-okhttp3:$STETHO_VERSION"
+
+    compile "io.reactivex:rxandroid:$RX_ANDROID_VERSION"
+    compile "io.reactivex:rxjava:$RX_JAVA_VERSION"
+
+    compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
+    apt "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
+
+    compile "com.github.bumptech.glide:glide:$GLIDE_VERSION"
+
+    compile "com.jakewharton.timber:timber:$TIMBER_VERISON"
+
+    debugCompile "com.squareup.leakcanary:leakcanary-android:$LEAKCANARY_VERSION"
+
+    compile "com.google.android.gms:play-services-maps:$PLAY_SERVICES_VERSION"
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Кинопоиск API</string>
+
+    <!-- Main Activity -->
+
+    <string name="searchSettingsTitle">Параметры поиска</string>
+    <string name="settingLocation">Местонахождение:</string>
+    <string name="settingDate">Дата:</string>
+    <string name="settingSort">Сортировка:</string>
+    <string name="stringSettingDateMonth">Месяц:\u0020\u0020</string>
+    <string name="stringSettingDateYear">Год:\u0020\u0020</string>
+    <string name="stringSettingLocationCountry">Страна:\u0020\u0020</string>
+    <string name="stringSettingLocationCity">Город:\u0020\u0020</string>
+    <string name="stringSettingGenre">Жанр:\u0020\u0020</string>
+    <string name="stringCheckBoxRatingSort">По рейтингу</string>
+    <string name="stringCheckBoxGenreSort">По жанру:\u0020\u0020</string>
+
+    <string name="movie_card_seance_button_text">СЕАНСЫ</string>
+
+    <string name="stringButtonReload">Перезагрузить</string>
+
+    <string name="stringErrorWrongDate">К сожалению, поиск по данной дате невозможен. Выберите, пожалуйста, другую!</string>
+    <string name="stringErrorDataNotLoaded">Ошибка при загрузке параметров поиска. Проверьте соединение с интернетом.</string>
+    <string name="stringErrorNoNetwork">Отсутствует соединение с интернетом.</string>
+
+    <!-- Detail Activity -->
+
+    <string name="label_detail">Подробности</string>
+    <string name="text_no_data">Ошибка при загрузке данных.</string>
+    <string-array name="detail_fragment_titles">
+        <item>Основная информация</item>
+        <item>Дополнительная информация</item>
+        <!--<item>Люди</item>-->
+        <item>Рейтинги</item>
+    </string-array>
+
+    <string name="detail_fragment_name">Название: %s</string>
+    <string name="detail_fragment_genre">Жанр: %s</string>
+    <string name="detail_fragment_year">Год выпуска: %s</string>
+    <string name="detail_fragment_slogan">Слоган: %s</string>
+
+    <string name="detail_fragment_ratingMPAA">Рейтинг MPAA: %s</string>
+    <string name="detail_fragment_ratingAge">Возрастное ограничение: %s+</string>
+    <string name="detail_fragment_plot">Сюжет: %s</string>
+    <string name="detail_fragment_filmLength">Длинна фильма: %s</string>
+    <string name="detail_fragment_country">Страна: %s</string>
+
+    <string name="detail_fragment_isIMAX">Доступно в IMAX: %b</string>
+    <string name="detail_fragment_is3D">Доступно в 3D: %b</string>
+    <string name="detail_fragment_imdbVotes">Количество голосов - IMDB: %s</string>
+    <string name="detail_fragment_imdbRating">Рейтинг IMDB: %s</string>
+    <string name="detail_fragment_criticsVotes">Количество голосов - кинокритики: %s</string>
+    <string name="detail_fragment_criticsRating">Рейтинг кинокритиков: %s</string>
+
+    <!-- Seances Activity -->
+
+    <string name="label_seances">Сеансы на\u0020\u0020%s</string>
+    <string name="string_menu_item_date_picker">Выбрать дату</string>
+    <string name="text_view_label_seances">Список сеансов:</string>
+    <string name="seances_empty_items">Нету сеансов по данному запросу.\nПопробуйте другой день.</string>
+
+    <!-- Maps Activity -->
+    <string name="marker_text">Кинотеатр %s</string>
+
+    <!-- Others -->
+
+    <string name="movie_card_image_view_content_description">Movie card movie image view.</string>
+    <string name="fragment_detail_image_view_content_description">Fragment movie image view.</string>
+    <string name="posterURL">https://st.kp.yandex.net/images/film_big/%s.jpg</string>
+    <string name="title_activity_maps">Местоположение кинотеатра</string>
+
+
+
+</resources>

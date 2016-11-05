@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ui.activities.SeancesActivity">
+    <item
+        android:id="@+id/menu_datePicker"
+        android:title="@string/string_menu_item_date_picker"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_event_white_48dp"
+        app:showAsAction="always"/>
+</menu>
